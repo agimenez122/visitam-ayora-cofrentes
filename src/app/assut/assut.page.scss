@@ -1,0 +1,37 @@
+ion-img{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      ion-img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+
+  ion-slide{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      ion-slide{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+  
+  ion-text{
+    display: flex;
+    font-family: sans-serif;
+    margin-top: 25px;
+  } 
+
+  .text-right{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+     font-family: sans-serif;
+    margin-top: 5px;
+  }

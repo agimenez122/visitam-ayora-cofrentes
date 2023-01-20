@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-button color="warning" (click)="backClicked();">
+      </ion-button>
+    <ion-title>
+  
+
+      <h2 *ngIf="getUrl()==='/chirel'">{{ 'CASTILLO_CHIREL' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/volcan'">{{ 'VOLCAN' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/salinas'">{{ 'SALINAS' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/casas-rio'">{{ 'CASAS_DEL_RIO' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/ermita-castillo'">{{ 'ERMITA_CASTILLO' | translate }}</h2>
+
+
+      <h2 *ngIf="getUrl()==='/contact'">{{ 'CONTACT' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/idioma'">{{ 'IDIOMA' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/restaurant'">{{ 'SERVICIS' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/reserve'">{{ 'RESERVA_ALLOTJAMENT' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/event'">Agenda</h2>
+      <h2 *ngIf="getUrl()==='/shop'">{{ 'TIENDA' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/promotion'">Promocions</h2>
+
+      <h2 *ngIf="getUrl()==='/assut'">{{ 'LASSUT' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/torre'">{{ 'TORRE' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/iglesia'">{{ 'LIGLESIA' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/compuertas'">{{ 'CASA_COMPORTES' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/creueta'">{{ 'CREU_ALTA' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/poblat'">{{ 'POBLAT' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/ermita'">{{ 'ERMITA_TITLE' | translate }}</h2>
+      <h2 *ngIf="getUrl()==='/moriscos'">{{ 'ANTELLA_MORISCA' | translate }}</h2>
+
+      <h2 *ngIf="getUrl()==='/maera'">Maerà</h2>
+
+    </ion-title>
+  </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>

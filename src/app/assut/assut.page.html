@@ -1,0 +1,544 @@
+<maintoolbar></maintoolbar>
+  <ion-content *ngIf="getUrl()==='/chirel'">
+    <ion-card>
+      <ion-card-header>
+        <ion-slides scrollbar="true">
+          <ion-slide>
+            <ion-img src="../assets/imagenes/chirel/chirel_1.jpg"></ion-img>
+          </ion-slide>
+          <ion-slide>
+            <ion-img src="../assets/imagenes/chirel/chirel_2.jpg"></ion-img>
+          </ion-slide>
+        </ion-slides>
+        <ion-text class="text-right">
+          << {{ 'SLIDER_TEXT' | translate }}>>
+        </ion-text>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12360.532865011257!2d-0.9858727!3d39.2398475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58b3aac51e9c3b83!2sCastillo%20de%20Chirel!5e0!3m2!1ses!2ses!4v1656237997907!5m2!1ses!2ses')">
+          <ion-icon slot="icon-only" name="location"></ion-icon>
+        </ion-button>
+        <ion-button color="warning" (click)="reproductor();">
+          <ion-icon name="headset-outline"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+          <ion-icon name="play"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+          <ion-icon name="stop"></ion-icon>
+        </ion-button>
+        <p>
+          <ion-text>{{ 'CHIREL_TEXT1' | translate }}</ion-text>
+        </p>
+        <p>
+          <ion-text>{{ 'CHIREL_TEXT2' | translate }}</ion-text>
+        </p>
+        <p>
+          <ion-text>{{ 'CHIREL_TEXT3' | translate }}</ion-text>
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+
+  <ion-content *ngIf="getUrl()==='/casas-rio'">
+    <ion-card>
+      <ion-card-header>
+        <ion-slides scrollbar="true">
+          <ion-slide>
+            <ion-img src="../assets/imagenes/casas_rio/casas1.jpg"></ion-img>
+          </ion-slide>
+          <ion-slide>
+            <ion-img src="../assets/imagenes/casas_rio/casas2.jpg"></ion-img>
+          </ion-slide>
+        </ion-slides>
+        <ion-text class="text-right">
+          << {{ 'SLIDER_TEXT' | translate }}>>
+        </ion-text>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.6426037759375!2d-1.1360567348046227!3d39.2963550295111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6129f562a70d17%3A0x521a238481a9f0e3!2s46356%20Casas%20del%20Rio%2C%20Valencia!5e0!3m2!1ses!2ses!4v1656242316979!5m2!1ses!2ses')">
+          <ion-icon slot="icon-only" name="location"></ion-icon>
+        </ion-button>
+        <ion-button color="warning" (click)="reproductor();">
+          <ion-icon name="headset-outline"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+          <ion-icon name="play"></ion-icon>
+        </ion-button>
+        <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+          <ion-icon name="stop"></ion-icon>
+        </ion-button>
+        <p>
+          <ion-text>{{ 'CASAS_RIO_TEXT1' | translate }}</ion-text>
+        </p>
+        <p>
+          <ion-text>{{ 'CASAS_RIO_TEXT2' | translate }}</ion-text>
+        </p>
+        <p>
+          <ion-text>{{ 'CASAS_RIO_TEXT3' | translate }}</ion-text>
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+
+
+<ion-content *ngIf="getUrl()==='/volcan'">
+  <ion-card>
+    <ion-card-header>
+      <ion-slides scrollbar="true">
+        <ion-slide>
+          <ion-img src="../assets/imagenes/volcan/volcan1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/volcan/volcan2.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+      <ion-text class="text-right">
+        << {{ 'SLIDER_TEXT' | translate }}>>
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.131045529519!2d-1.074569384806412!3d39.239896779519356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6128b12562afd5%3A0xa012c94843a78ef3!2sEl%20Volc%C3%A1n%20de%20Cofrentes%20-%20Cerro%20de%20Agras!5e0!3m2!1ses!2ses!4v1656242238731!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+      <ion-button color="warning" (click)="reproductor();">
+        <ion-icon name="headset-outline"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+      <p>
+        <ion-text>{{ 'VOLCAN_TEXT1' | translate }}</ion-text>
+      </p>
+      <p>
+        <ion-text>{{ 'VOLCAN_TEXT2' | translate }}</ion-text>
+      </p>
+      <p>
+        <ion-text>{{ 'VOLCAN_TEXT3' | translate }}</ion-text>
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+<ion-content *ngIf="getUrl()==='/salinas'">
+  <ion-card>
+    <ion-card-header>
+      <ion-slides scrollbar="true">
+        <ion-slide>
+          <ion-img src="../assets/imagenes/salinas/salinas1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/salinas/salinas1.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+      <ion-text class="text-right">
+        << {{ 'SLIDER_TEXT' | translate }}>>
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.3243182191686!2d-1.065303256908585!3d39.26094154713907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6129e4ecbb9c23%3A0xda60e9e7ff4d2e83!2sSalinas%20de%20San%20Javier!5e0!3m2!1ses!2ses!4v1656242166997!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+      <ion-button color="warning" (click)="reproductor();">
+        <ion-icon name="headset-outline"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+      <p>
+        <ion-text>{{ 'SALINAS_TEXT1' | translate }}</ion-text>
+      </p>
+      <p>
+        <ion-text>{{ 'SALINAS_TEXT2' | translate }}</ion-text>
+      </p>
+      <p>
+        <ion-text>{{ 'SALINAS_TEXT3' | translate }}</ion-text>
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<ion-content *ngIf="getUrl()==='/ermita-castillo'">
+  <ion-card>
+    <ion-card-header>
+      <ion-slides scrollbar="true">
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita_castillo/ermita1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita_castillo/ermita2.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/ermita_castillo/ermita3.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+      <ion-text class="text-right">
+        << {{ 'SLIDER_TEXT' | translate }}>>
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6191.878311490193!2d-1.0603236416985755!3d39.10785537111768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd613be62aa91c01%3A0xa0247a04cc13f318!2sErmita%20de%20la%20Santa%20Cruz%20(Ruinas)!5e0!3m2!1ses!2ses!4v1656241948154!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+      <ion-button color="warning" (click)="reproductor();">
+        <ion-icon name="headset-outline"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+      <p>
+        <ion-text>{{ 'ERMITA_CASTILLO_TEXT1' | translate }}</ion-text>
+      </p>
+      <p>
+        <ion-text>{{ 'ERMITA_CASTILLO_TEXT2' | translate }}</ion-text>
+      </p>
+      <p>
+        <ion-text>{{ 'ERMITA_CASTILLO_TEXT3' | translate }}</ion-text>
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<!-- Antella -->
+<ion-content *ngIf="getUrl()==='/assut'">
+  <ion-card>
+    <ion-card-header>
+      <ion-slides scrollbar="true">
+        <ion-slide>
+          <ion-img src="../assets/imagenes/assut/assut1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="../assets/imagenes/assut/assut2.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+      <ion-text class="text-right">
+        << {{ 'SLIDER_TEXT' | translate }}>>
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12162.38665870401!2d-0.5870654973144607!3d39.08248213725188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28802e3d7c08fe99!2sParr%C3%B2quia%20de%20la%20Pur%C3%ADssima%20Concepci%C3%B3!5e1!3m2!1ses!2ses!4v1634924273895!5m2!1ses!2ses')">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+      <ion-button color="warning" (click)="reproductor();">
+        <ion-icon name="headset-outline"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+        <ion-icon name="play"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+        <ion-icon name="stop"></ion-icon>
+      </ion-button>
+      <p>
+        <ion-text>{{ 'AZUD_TEXT' | translate }}</ion-text>
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- Torre -->
+<ion-content *ngIf="getUrl()==='/torre'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="../assets/imagenes/torre/torre1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/torre/torre2.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.8109644179118!2d-0.5930578707812326!3d39.07882829872145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a7ae01474c23%3A0x61dbfca17041d55b!2sTorre%20%C3%A1rabe!5e1!3m2!1ses!2ses!4v1597055446590!5m2!1ses!2ses')">
+      <ion-icon slot="icon-only" name="location"></ion-icon>
+    </ion-button>
+    <ion-button color="warning" (click)="reproductor();">
+      <ion-icon name="headset-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+      <ion-icon name="stop"></ion-icon>
+    </ion-button>
+    <p>
+      <ion-text>{{ 'TORRE_CONTENT' | translate }}</ion-text>
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+
+<!-- iglesia -->
+<ion-content *ngIf="getUrl()==='/iglesia'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="../assets/imagenes/iglesia/iglesia1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/iglesia/iglesia2.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.4220475462407!2d-0.5914615114384949!3d39.07920503192951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28802e3d7c08fe99!2sParr%C3%B2quia%20de%20la%20Pur%C3%ADssima%20Concepci%C3%B3!5e0!3m2!1ses!2ses!4v1594277843073!5m2!1ses!2ses')">
+      <ion-icon slot="icon-only" name="location"></ion-icon>
+    </ion-button>
+    <ion-button color="warning" (click)="reproductor();">
+      <ion-icon name="headset-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+      <ion-icon name="stop"></ion-icon>
+    </ion-button>
+    <p>
+      <ion-text>{{ 'IGLESIA_CONTENT' | translate }}</ion-text>
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+<!-- compuertas -->
+
+<ion-content *ngIf="getUrl()==='/compuertas'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="../assets/imagenes/casa_comportes/comportes1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/casa_comportes/comportes2.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/casa_comportes/comportes3.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.792440863771!2d-0.5961444707812593!3d39.080659198721435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a72723a364ab%3A0xc069d03b0e5f33f1!2sCasa%20de%20les%20Comportes!5e1!3m2!1ses!2ses!4v1597057646822!5m2!1ses!2ses')">
+      <ion-icon slot="icon-only" name="location"></ion-icon>
+    </ion-button>
+    <ion-button color="warning" (click)="reproductor();">
+      <ion-icon name="headset-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+      <ion-icon name="stop"></ion-icon>
+    </ion-button>
+    <p>
+      <ion-text>{{ 'CASA_COMPUERTAS_CONTENT' | translate }}</ion-text>
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+<!-- Creueta -->
+
+<ion-content *ngIf="getUrl()==='/creueta'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="../assets/imagenes/creuAlta/creu1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/creuAlta/creu2.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.1629875741278!2d-0.5932481707796111!3d39.083464039725044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDA1JzAwLjUiTiAwwrAzNSczMy43Ilc!5e1!3m2!1ses!2ses!4v1597052932526!5m2!1ses!2ses')">
+      <ion-icon slot="icon-only" name="location"></ion-icon>
+    </ion-button>
+    <ion-button color="warning" (click)="reproductor();">
+      <ion-icon name="headset-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+      <ion-icon name="stop"></ion-icon>
+    </ion-button>
+    <p>
+      <ion-text>{{ 'CREU_ALTA_CONTENT' | translate }}</ion-text>
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+
+<!-- Poblat -->
+
+<ion-content *ngIf="getUrl()==='/poblat'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="../assets/imagenes/poblat/Poblat_Iber_1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/poblat/Poblat_Iber_2.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button color="warning" (click)="CreatePopover('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.1629875741278!2d-0.5932481707796111!3d39.083464039725044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDA1JzAwLjUiTiAwwrAzNSczMy43Ilc!5e1!3m2!1ses!2ses!4v1597052932526!5m2!1ses!2ses')">
+      <ion-icon slot="icon-only" name="location"></ion-icon>
+    </ion-button>
+    <ion-button color="warning" (click)="reproductor();">
+      <ion-icon name="headset-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+      <ion-icon name="stop"></ion-icon>
+    </ion-button>
+    <p>
+      <ion-text >{{ 'POBLAT_CONTENT1' | translate }}</ion-text>
+    </p>
+    <p>
+      <ion-text >{{ 'POBLAT_CONTENT2' | translate }}</ion-text>
+    </p>
+    <p>
+      <ion-text >{{ 'POBLAT_CONTENT3' | translate }}</ion-text>
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+
+<!-- Ermita -->
+
+<ion-content *ngIf="getUrl()==='/ermita'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="../assets/imagenes/ermita/Ermita_1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/ermita/Ermita_2.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="../assets/imagenes/ermita/Ermita_3.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-button color="warning" (click)='CreatePopover("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.0897188107565!2d-0.5928861848115249!3d39.08165407954261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a78509ecadd5%3A0x911badb8b36def13!2sErmita%20del%20Crist%20de%20l&#39;Agonia!5e0!3m2!1ses!2ses!4v1653172611410!5m2!1ses!2ses")'>
+      <ion-icon slot="icon-only" name="location"></ion-icon>
+    </ion-button>
+    <ion-button color="warning" (click)="reproductor();">
+      <ion-icon name="headset-outline"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="playAudio();">
+      <ion-icon name="play"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="audioActivado" color="warning" (click)="stopAudio();">
+      <ion-icon name="stop"></ion-icon>
+    </ion-button>
+    <p>
+      <ion-text >{{ 'ERMITA_CONTENT1' | translate }}</ion-text>
+    </p>
+    <p>
+      <ion-text >{{ 'ERMITA_CONTENT2' | translate }}</ion-text>
+    </p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+<!-- maeros -->
+<ion-content *ngIf="getUrl()==='/maera'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="..\assets\imagenes\maeros\maeros1.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="..\assets\imagenes\maeros\maeros2.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+    <ion-text class="text-right">
+      << {{ 'SLIDER_TEXT' | translate }}>>
+    </ion-text>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-text>
+      {{ 'MAEROS_CONTENT1' | translate }}
+    </ion-text>
+    <ion-text>
+      {{ 'MAEROS_CONTENT2' | translate }}
+    </ion-text>
+    <ion-text>
+      {{ 'MAEROS_CONTENT3' | translate }}
+    </ion-text>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+
+
+<!-- MORISCOS -->
+<ion-content *ngIf="getUrl()==='/moriscos'">
+<ion-card>
+  <ion-card-header>
+    <ion-slides scrollbar="true">
+      <ion-slide>
+        <ion-img src="..\assets\imagenes\moriscos\Planol_Morisc_APP2.png"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card-header>
+  <ion-card-content>
+    <!-- ion-text>
+      <p>{{ 'MAEROS_CONTENT1' | translate }}</p>
+      <p>{{ 'MAEROS_CONTENT2' | translate }}</p>
+      <p>{{ 'MAEROS_CONTENT3' | translate }}</p>
+    </ion-text -->
+  </ion-card-content>,
+</ion-card>
+</ion-content>
+
+
+<ion-footer class="bar-balanced">&copy;Visita'm</ion-footer> 

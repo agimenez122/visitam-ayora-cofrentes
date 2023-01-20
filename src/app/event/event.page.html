@@ -1,0 +1,40 @@
+<maintoolbar></maintoolbar>
+<ion-content>
+  <ion-card>
+    <img src="../../assets/imagenes/hotel.png" />
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Contratación</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Si quiere que su alojamiento aparezca en la app, póngase en contacto con nosotros en la dirección email 
+      <a href="mailto:agimenezing@gmail.com" >agimenezing@gmail.com</a>
+    </ion-card-content>
+  </ion-card>
+<iframe src="proba.html" width="468" height="60"></iframe>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Alojamientos cercanos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    <ion-list *ngFor="let hotel of hoteles">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../assets\icon\hotel_ico.png"/>
+        </ion-avatar>
+        <ion-label>
+          <h3>{{hotel.nombre}}</h3>
+          <p>{{hotel.poblacion}}</p>
+          <p>{{hotel.telefono}}</p>
+        </ion-label>
+        <ion-button color="warning" href="{{hotel.url}}">
+          <ion-icon slot="icon-only" name="calendar"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+    
+</ion-content>
+<ion-footer class="bar-balanced">&copy;Visita'm</ion-footer>

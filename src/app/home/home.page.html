@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-title>
+        <h2>{{ 'LUGARES_DE_INTERES' | translate }}</h2>
+      </ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Antella -->
+<ion-content *ngIf="this.id === 1">
+  <ion-card class="assut_card" (click)="go('/assut');">
+    <ion-card-content><h1>{{ 'LASSUT' | translate }}</h1></ion-card-content> 
+  </ion-card>
+  <ion-card class="iglesia_card" (click)="go('/iglesia');">
+    <ion-card-content><h1>{{ 'LIGLESIA' | translate }}</h1></ion-card-content>
+  </ion-card>
+  <ion-card class="creu_alta_card" (click)="go('/creueta');">
+    <ion-card-content><h1>{{ 'CREU_ALTA' | translate }}</h1></ion-card-content>
+  </ion-card>
+  <ion-card class="torre_card" (click)="go('/torre');">
+    <ion-card-content><h1>{{ 'TORRE' | translate }}</h1></ion-card-content>
+  </ion-card>  
+  <ion-card class="ermita_card" (click)="go('/ermita');">
+    <ion-card-content><h1>{{ 'ERMITA' | translate }}</h1></ion-card-content>
+  </ion-card>  
+  <ion-card class="casa_comportes_card" (click)="go('/compuertas');">
+    <ion-card-content><h1>{{ 'CASA_COMPORTES' | translate }}</h1></ion-card-content>
+  </ion-card>  
+  <ion-card class="poblat_iber_card"  (click)="go('/poblat');">
+    <ion-card-content><h1>{{ 'POBLAT_IBER' | translate }}</h1></ion-card-content>
+  </ion-card>  
+
+  <!--ion-card class="balcon_card" (click)="go('/balcon');">
+    <ion-card-content><h1>{{ 'EL_BALCON_DE_ANTELLA' | translate }}</h1></ion-card-content>
+  </ion-card-->  
+  <!--ion-card class="jardins_assut_card">
+    <ion-card-content><h1>{{ 'JARDINS_ASSUT' | translate }}</h1></ion-card-content>
+  </ion-card>  
+  <ion-card class="casa_rey_card">
+    <ion-card-content><h1>{{ 'CASA_REY' | translate }}</h1></ion-card-content>
+  </ion-card>  
+  <ion-card class="moli_card">
+    <ion-card-content><h1>{{ 'EL_MOLI' | translate }}</h1></ion-card-content>
+  </ion-card-->  
+</ion-content>
+
+<!-- Valle Ayora Cofrentes -->
+<ion-content *ngIf="this.id === 2" (onLoad)="console.log('onload')">
+    <ion-card class="chirel_card" (click)="go('/chirel');">
+      <ion-card-content><h1>{{ 'CHIREL' | translate }}</h1></ion-card-content> 
+    </ion-card>
+    <ion-card class="volcan_card" (click)="go('/volcan');">
+      <ion-card-content><h1>{{ 'VOLCAN' | translate }}</h1></ion-card-content> 
+    </ion-card>
+    <ion-card class="salinas_card" (click)="go('/salinas');">
+      <ion-card-content><h1>{{ 'SALINAS' | translate }}</h1></ion-card-content> 
+    </ion-card>
+    <ion-card class="casas_card" (click)="go('/casas-rio');">
+      <ion-card-content><h1>{{ 'CASAS_DEL_RIO' | translate }}</h1></ion-card-content> 
+    </ion-card>
+    <ion-card class="ermita_castillo_card" (click)="go('/ermita-castillo');">
+      <ion-card-content><h1>{{ 'ERMITA_CASTILLO' | translate }}</h1></ion-card-content> 
+    </ion-card>
+</ion-content>
+
+<ion-footer class="bar-balanced">&copy;Visita'm</ion-footer>

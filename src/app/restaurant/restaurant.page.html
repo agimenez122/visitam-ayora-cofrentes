@@ -1,0 +1,26 @@
+<maintoolbar></maintoolbar>
+
+<ion-content>
+  <ion-list *ngFor="let service of services">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{service.avatar}}/>
+      </ion-avatar>
+      <ion-label>
+        <h3>{{service.name}}</h3>
+        <p> {{service.phone}}</p>
+      </ion-label>
+      <ion-button *ngIf="service.phone" (click)="callPhoneNumber(service.phone)" color="warning" > 
+        <ion-icon slot="icon-only" name="call"></ion-icon> 
+      </ion-button>
+      <p></p>
+      <ion-button  *ngIf="service.whatsapp" color="warning" (click)="whatsappSend(service.phone)">
+        <ion-icon slot="icon-only" name="logo-whatsapp"></ion-icon>
+      </ion-button>
+      <ion-button color="warning" (click)="CreatePopover(service.popover)">
+        <ion-icon slot="icon-only" name="location"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer class="bar-balanced">&copy;Visita'm</ion-footer>

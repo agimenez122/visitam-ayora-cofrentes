@@ -1,0 +1,20 @@
+{
+    "services": [
+        {
+            "avatar":"../assets/imagenes/allotjament/ayora_77.jpg",
+            "name":"Apartamentos hotel 77",
+            "poblacion":"Ayora",
+            "phone":"+34638052031",
+            "whatsapp":true,
+            "popover":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.8639126975327!2d-1.0564147848120606!3d39.06401537954523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6139ff29381d1b%3A0xf1b2db44b3a8662a!2sBar%20Restaurante%2077!5e0!3m2!1ses!2ses!4v1656242442862!5m2!1ses!2ses"
+        }, {
+            "avatar":"../assets/imagenes/allotjament/cofrentes_balneario.jpg",
+            "name":"Balneario de Cofrentes",
+            "poblacion":"Cofrentes",
+            "phone":"+34961894025",
+            "whatsapp":false,
+            "popover":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7620.245811053472!2d-1.0930451286748857!3d39.23570339968106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82c2a48be621cbb4!2sHotel%20Balneario%20de%20Cofrentes!5e0!3m2!1ses!2ses!4v1656242548558!5m2!1ses!2ses"
+        }
+    ]
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "visitam",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {
+      "enabled": false
+    }
+  },
+  "type": "angular"
+}

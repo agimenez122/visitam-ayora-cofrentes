@@ -1,0 +1,35 @@
+<maintoolbar></maintoolbar>
+<ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title><h2>{{ 'ALLOTJAMENTS_PROXIMS' | translate }}</h2></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    <ion-list *ngFor="let hotel of hoteles">
+      <img  *ngIf="hotel.foto" src="{{hotel.foto}}" width="120" height="100" style="float:right;">
+      <ion-item>
+        <ion-label>
+          <h3>{{hotel.nombre}}</h3>
+          <p>{{hotel.poblacion}}</p>  
+        
+        <p>
+        <ion-button *ngIf="hotel.telefono" (click)="callPhoneNumber(hotel.telefono)" color="warning" > 
+          <ion-icon slot="icon-only" name="call"></ion-icon> 
+        </ion-button>
+        <ion-button *ngIf="hotel.whatsapp" color="warning" (click)="whatsappSend(hotel.telefono)">
+          <ion-icon slot="icon-only" name="logo-whatsapp"></ion-icon>
+        </ion-button>
+        <ion-button color="warning" (click)="openBrowser(hotel.url)" >
+          <ion-icon slot="icon-only" name="calendar"></ion-icon>
+        </ion-button>
+      </p>
+    </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+    
+</ion-content>
+<ion-footer class="bar-balanced">&copy;Visita'm</ion-footer>

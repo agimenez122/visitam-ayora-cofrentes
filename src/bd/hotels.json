@@ -1,0 +1,59 @@
+{"db": [
+    {
+        "url":"https://www.booking.com/hotel/es/alojamiento-rural-palaz.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"Alojamiento Rural Palaz",
+        "id":"4182842",
+        "poblacion":"Ayora",
+        "telefono":"+34689018850",
+        "whatsapp":true,
+        "foto":"../assets/imagenes/allotjament/ayora_palaz.jpg"
+    }, {
+        "url":"https://www.booking.com/hotel/es/apartamentos-77.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"APARTAMENTOS HOTEL 77",
+        "id":"5833648",
+        "poblacion":"Ayora",
+        "telefono":"+34638052031",
+        "whatsapp":true,
+        "foto":"../assets/imagenes/allotjament/ayora_77.jpg"
+    }, {
+        "url":"https://www.booking.com/hotel/es/casa-don-pio.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"Casa Rural Don Pio",
+        "id":"6596346",
+        "poblacion":"Ayora",
+        "telefono":"+34646929200",
+        "whatsapp":true,
+        "foto":"../assets/imagenes/allotjament/ayora_pio.jpg"
+    }, {
+        "url":"https://www.booking.com/hotel/es/casa-rural-la-placeta-ayora.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"Casa Rural Hotel La Placeta",
+        "id":"6664053",
+        "poblacion":"Ayora",
+        "telefono":"+34654381040",
+        "whatsapp":true,
+        "foto":"../assets/imagenes/allotjament/ayora_placeta.jpg"
+    },{
+        "url":"https://www.booking.com/hotel/es/balneario-de-cofrentes.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"Balneario de Cofrentes",
+        "id":"320637",
+        "poblacion":"Cofrentes",
+        "whatsapp":false,
+        "telefono":"+34961894025",
+        "foto":"../assets/imagenes/allotjament/cofrentes_balneario.jpg"
+    },{
+        "url":"https://www.booking.com/hotel/es/el-mirador-del-norte.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"El mirador del norte",
+        "id":"2521718",
+        "poblacion":"Cortes de Pallás",
+        "whatsapp":true,
+        "telefono":"+34675645113",
+        "foto":"../assets/imagenes/allotjament/cortes_mirador_norte.jpg"
+    },{
+        "url":"https://www.booking.com/hotel/es/los-valientes-gitanos.en.html?aid=7939222&no_rooms=1&group_adults=2",
+        "nombre":"Los Valientes Gitanos",
+        "id":"8682854",
+        "poblacion":"Jarafuel",
+        "telefono":"",
+        "whatsapp":false,
+        "foto":"../assets/imagenes/allotjament/jarafuel_valientes_gitanos.jpg"
+    }
+]}
